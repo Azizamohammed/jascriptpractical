@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">name</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <input type="text" id="jina" required>
+        <br>
+        <br>
+        <label for="regNumber">Register Number:</label>&emsp;&emsp;&emsp;&emsp;
+        <input type="text" id="regNumber" name="regNumber" required>
+        <br><br>
+        <label for="">email</label>&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;
+        <input id="email" type="text" required>
+        <br>
+        <br>
+        <label for="program">Program:</label>&emsp;&emsp;&emsp;&emsp;&emsp;;&emsp;&emsp;
+        <input type="text" id="program" name="program" required>
+        <br>
+        <br>
+        <label for="dob">Date of Birth:</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <input type="date" id="dob" required>
+        <br>
+        <br>
+        
+        <label for="phoneNumber">Phone Number:</label>&emsp;&emsp;&emsp;&emsp;&emsp; 
+        <input type="text" id="phone" required>
+        <br>
+        <br>
+        <label for="tempAddress">Temporary Address:</label>&emsp;&emsp;&emsp;
+         <input type="text" id="tempAddress" required><br><br>
+    
+        <label for="permanentCheckbox">Permanent Address :</label>&emsp;&emsp;&emsp;&emsp;
+        <input type="checkbox" id="permanentCheckbox" onchange="copyAddress()"><br><br>
+    
+        <label for="permanentAddress">Permanent Address:</label>&emsp;&emsp;&emsp;&emsp;
+       <input type="text" id="permanentAddress" required><br><br>
+    
+
+
+        <button onclick="validation()">submit</button>
+    </form>
+    <script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input,select{ 
+        margin-top: 20px; 
+    } 
+
+    
+.required:after{  
+           content:"*";  
+            font-weight:bold;  
+            color:red; 
+   } 
+
+    .btn1{           
+          margin-left: 199px; 
+    } 
+
+  .name:hover{ 
+            border-color: red; 
+  } 
+
+   
+  .inputmessage{
+     display: none;
+     color: red; 
+    /* position: absolute; */     
+     top: 100%;        
+      left: 0; 
+    margin-top: 25px; 
+  }       
+  .nem{ 
+    display: flex; 
+  
+  } 
+
+
+    </style>
+</head>
+<body>
+    
+   <div class="container"> 
+ 
+    <div class="form1"> 
+        <form action="#"> 
+            <h1>Test JavaScript Form Validation</h1> 
+            <div class="nem"> 
+            <label for="" class="required" style="margin-top: 25px;" required maxlength="20">Name</label> 
+            
+            <input class="name" type="text" name="fname" required style="margin-left: 150px;">  <span style="margin-left: 10px;" class="inputmessage"> Please enter your name!</span></div> 
+            <br>  
+
+           
+            <label for="" >Address</label> 
+            <textarea style="height: 20px; margin-left: 140px;" type="text" class="address"  > </textarea> <br> 
+             
+            <label for="" class="required">Zip Code</label> 
+            <input type="text" class="zipcode" required style="marginleft: 125px;"><br> 
+
+            <label for="" class="required">Country</label> 
+            <select name="" id="select"required style="margin-left: 
+132px;">  
+
+                <option value="" selected disabled>Please select</option> 
+                <option value="">India</option> 
+                <option value="">Tanzania</option>
+                <option value="">Canada</option> 
+            </select> <br> 
+
+            <label for="" class="required">Gender</label> 
+           <input type="radio"required style="margin-left: 150px;"> Male 
+           <input type="radio"required >Female <br>  
+           <label for="" class="required">Preferences</label>               
+            <input type="checkbox" name="preference" value="Red" style="margin-left: 120px;">Red 
+           <input type="checkbox" name="preference" value="Green">Green 
+           <input type="checkbox" name="preference" value="Blue">Blue <br>  
+           <label for="" class="required">Phone</label> 
+           <input type="text" class="phone"required style="margin-left: 
+150px;"><br> 
+
+           <label for="" class="required">Email</label> 
+           <input type="text" class="email"required style="margin-left: 
+150px;"> <br> 
+
+           <label for="" class="required">password(6-8 characters)</label>              
+             <input type="text" class="password" required minlength="6" maxlength="8"required style="margin-left: 25px;" > <br>  
+           <label for="" class="required">Verify password</label> 
+           <input type="text" class="verify"required style="margin-left: 
+80px;" > <br> <br> 
+
+            
+           <button type="submit" class="btn1" onclick="submit()">SEND</button>  
+           <button class="btn2">CLEAR</button> 
+         </form> 
+         
+       
+    </div> 
+</div> 
+
+<script src="form.js"></script>  
+</body>
+</html>

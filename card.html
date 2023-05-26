@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Credit Validation Card</h1>
+        <label for="cardType">Credit Card Type:</label>&emsp;&emsp;
+        <select id="cardType">
+            <option value="American Express">American Express</option>
+            <option value="MasterCard">MasterCard</option>
+            <option value="VISA">VISA</option>
+            <option value="Discover">Discover</option>
+            <option value="Diners Club">Diners Club</option>
+        </select>
+        <br><br>
+
+        <label for="cardNumber">Credit Card Number:</label>&emsp;
+        <input type="text" id="cardNumber" name="cardNumber">
+        <br><br>
+        <button onclick="creditCard()">Validate</button>
+        <script src="card.js"></script>
+</body>
+</html>
