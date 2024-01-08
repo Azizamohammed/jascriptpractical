@@ -2,11 +2,12 @@ document.addEventListener('DOMContentLoaded', function() {
      let input = document.querySelector('.name');    
      let inputMessage = document.querySelector('.inputmessage'); 
  
-    input1.addEventListener('focus', function(){ 
+    input.addEventListener('focus', function(){ 
        inputMessage.style.display = "block"; 
          
-    })  input.addEventListener('blur', function(){ 
-            if (input1.value ===""){ 
+    })  ;
+     input.addEventListener('blur', function(){ 
+            if (input.value ===""){ 
                inputMessage.style.display = "block"; 
         
             }else{  
